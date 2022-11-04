@@ -5,7 +5,7 @@ agent any
 stages {
 stage('git code') {
 steps {
- git branch: 'main',  url: 'https://github.com/mounika1612/Jenkinsfile.git'
+ 
 echo 'getting source code'
 }
 }
