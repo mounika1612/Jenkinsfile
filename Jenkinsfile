@@ -19,7 +19,7 @@ echo 'building'
 }
 stage('deploying to tomcat server'){
 steps{
-deploy adapters: [tomcat9(credentialsId: 'admin', path: '', url: 'http://43.206.150.39:8081/')], contextPath: 'Jenkinsfile', war: '**/*.war'
+deploy adapters: [tomcat9(credentialsId: 'admin', path: '', url: 'http://52.192.188.175:8081/')], contextPath: 'Jenkinsfile', war: '**/*.war'
 }
 }
 
