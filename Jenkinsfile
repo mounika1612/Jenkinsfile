@@ -21,7 +21,7 @@ echo 'building'
 }
 stage('deploying to tomcat server'){
 steps{
-deploy adapters: [tomcat9(credentialsId: '72d7ee54-4a8f-4d13-b30f-0a8445ab4a38', path: '', url: 'http://35.78.176.36:8081/')], contextPath: null, war: '**/*.war'
+deploy adapters: [tomcat9(credentialsId: 'admin', path: '', url: 'http://54.65.71.150:8081/')], contextPath: 'Jenkinsfile', war: '**/*.war'
 }
 }
 
