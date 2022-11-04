@@ -7,7 +7,7 @@ maven 'Maven'
 stages {
 stage('git code') {
 steps {
-git credentialsId: 'git_creditials', url:'https://github.com/ravdy/hello-world.git'
+ git branch: 'main',  url: 'https://github.com/mounika1612/Jenkinsfile.git'
 echo 'getting source code'
 }
 }
